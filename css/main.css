@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Be Vietnam Pro', sans-serif;
+
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header_box {
+    padding-top: 56px;
+    /* position: relative; */
+}
+
+.list_text {
+    color: #242D52;
+    font-size: 13px;
+    font-weight: 500;
+    word-wrap: break-word
+}
+
+.list_text:hover {
+    opacity: 0.5;
+    /* outline:inherit; */
+}
+
+.links {
+    gap: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_container {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding-top: 143px;
+    gap: 125px;
+    position: relative;
+    padding-bottom: 120px;
+}
+
+.header_btn {
+    padding: 13px 32px;
+    color: #FCF6F5;
+    font-size: 13px;
+    font-weight: 700;
+    background: #F3603C;
+    box-shadow: 0px 15px 15px -10px #FF9F8E;
+    border-radius: 22px;
+    border: none;
+}
+
+/* hero */
+.header_box::after {
+    content: "";
+    display: inline-block;
+    width: 822px;
+    height: 970px;
+    background-image: url(/img/herobg.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -200px;
+    right: -192px;
+    z-index: -1;
+}
+
+.hero_imgBox {
+    display: flex;
+    text-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+
+}
+
+.hero_img2 {
+    top: 30px;
+    display: block;
+    position: absolute;
+    right: 130px;
+    top: 350px;
+}
+
+.hero_content {
+    width: 480px;
+}
+
+.hero_title {
+    color: #242D52;
+    font-size: 56px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.hero_text {
+    color: #242D52;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 40px;
+    width: 350px;
+}
+
+/* about */
+.about_container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 165px;
+}
+
+.about_title {
+    color: #242D52;
+    font-size: 40px;
+    margin-bottom: 24px;
+    font-weight: 700;
+    line-height: 44px;
+    width: 480px;
+}
+
+.about_title_text {
+    color: #242D52;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    opacity: 0.5;
+    width: 350px;
+}
+
+.about_ikon::before {
+    content: "";
+    display: inline-block;
+    width: 67px;
+    height: 39px;
+    background-image: url(/aboutIkon.svg);
+    background-repeat: no-repeat;
+
+}
+
+.about_list {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.about_list_title {
+    color: #242D52;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 19px;
+    text-wrap: nowrap;
+
+
+}
+
+.about_list_text {
+    color: #242D52;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    opacity: 0.5;
+    width: 445px;
+    margin-bottom: 40px;
+}
+
+.about::before {
+    content: "";
+    width: 556px;
+    height: 995px;
+    padding-bottom: 161px;
+    background-image: url(/img/aboutBG.svg);
+    background-repeat: no-repeat;
+    background-position: left -469px top 256px;
+    position: absolute;
+    overflow-x: hidden;
+    z-index: -1;
+    /* said */
+}
+
+.said_container {
+    text-align: center;
+    padding-bottom: 161px;
+}
+
+.said_title {
+    color: #242D52;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    width: 380px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.said_card_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 48px;
+}
+
+.said_card_list {
+    width: 540px;
+    margin: 0 auto;
+    background: #FAFAFA;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.said_list_img_box {
+    position: relative;
+    margin: -36px;
+    margin-bottom: 24px;
+}
+
+.said_card_list_title {
+    color: #242D52;
+    font-size: 16px;
+    font-weight: 700;
+    width: 235px;
+    padding-bottom: 19px;
+    margin: 0 auto;
+}
+
+.said_card_list_text {
+    color: #242D52;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 460px;
+    opacity: 0.5;
+}
+
+.said_card_list_box {
+    text-align: center;
+}
+
+.said_btn {
+    width: 137px;
+    text-align: center;
+}
+
+/* end */
+.end {
+    background-color: #F3603C;
+    padding-top: 62px;
+    padding-bottom: 62px;
+}
+
+.end_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.end_title {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    width: 500px;
+}
+
+.end_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.end_btn {
+    background-color: #FFFFFF;
+    color: #F3603C;
+    box-shadow: 0px 15px 15px -10px #DB5943;
+    padding: 13px 32px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 22px;
+    border: none;
+}
+
+.end_btn:hover {
+    color: #FF9F8E;
+}
+
+.header_btn:hover {
+    background-color: #FF9F8E;
+
+}
+
+/* footer */
+footer {
+    padding-top: 62px;
+    padding-bottom: 62px;
+    background-color: #1D1E25;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_box {
+    width: 154px;
+
+}
+
+.footer_logo {
+    margin-bottom: 83px;
+}
+
+.footer_links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer_link_text {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    width: 255px;
+    display: block;
+    margin-bottom: 13px;
+}
+
+.footer_form {
+    margin-bottom: 60px;
+}
+
+.footer_input {
+    padding: 14px 41px 14px 16px;
+    color: #8D8D8D;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 22px;
+    border: none;
+    outline: none;
+    /* outline-color: #F33C3C; */
+}
+
+.footer_input:hover {
+    outline-color: #F33C3C;
+}
+
+.footer_btn {
+    padding: 14px 23px;
+    color: #FCF6F5;
+    font-size: 13px;
+    font-weight: 700;
+    background: #F3603C;
+    border-radius: 22px;
+    border: none;
+    margin-left: 8px;
+}
+
+.fotter_form_box_text {
+    color: white;
+    font-size: 13px;
+    opacity: 0.5;
+    font-weight: 400;
+}
+
+.footer_forms_box {
+    text-align: right;
+}
